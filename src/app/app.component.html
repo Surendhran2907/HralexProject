@@ -1,0 +1,10 @@
+<nav ngbNav #nav="ngbNav" class="nav-tabs">
+    <ng-container ngbNavItem>
+     <a ngbNavLink="Car" routerLink ="/cars">Cars</a>
+    </ng-container>
+    <ng-container ngbNavItem>
+     <a ngbNavLink="AddCars" routerLink ="/addcars">AddCars</a>
+    </ng-container>
+  </nav>
+   <div [ngbNavOutlet]="nav" class="mt-2"></div>
+  <router-outlet></router-outlet>
